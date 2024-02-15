@@ -1,0 +1,24 @@
+name: Deploy Dockerized  Dotnet App to EC2 Linux
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: SSH into server and restart application
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            docker-compose build
+            docker-compose up -d
+            echo http://${{ secrets.SSH_HOST }}
+
+

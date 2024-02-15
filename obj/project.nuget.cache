@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7TlNflfGbqq1wh82GywULcY4NU/0qKvQ37VmApBjoOUnFXQPnWa/G5cZGt4XCfTrgmm7LRObvEtjds9SDE9cIQ==",
+  "success": true,
+  "projectFilePath": "/home/shadab/repos/dev-sha-ops/dotnet_dockerized_deployment/dotnetapp/dotnetapp.csproj",
+  "expectedPackageFiles": [
+    "/home/shadab/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.27/microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}
